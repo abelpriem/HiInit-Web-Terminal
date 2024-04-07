@@ -1,0 +1,209 @@
+* {
+  background-color: #1e252e;
+  font-family: Hack, monospace;
+}
+
+body {
+  margin: 5px;
+}
+
+p {
+  color: #EBDBB2;
+  margin-bottom: 0px;
+}
+
+a {
+  color: #EBDBB2;
+  text-decoration: none;
+}
+
+.anchor-button {
+  color: rgb(96, 170, 96);
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #1e252e;
+  border: solid;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 1px 6px;
+  margin-left: 15px;
+}
+
+a:hover {
+  color: grey;
+}
+
+a:active {
+  color: orange;
+}
+
+ol {
+  color: orange;
+}
+
+.container {
+  display: block;
+  background-color: #1e252e;
+  border-style: solid;
+  border-color: rgb(255, 128, 55);
+  border-radius: 0.25rem;
+  padding-left: 20px;
+  padding-top: 15px;
+  overflow-y: auto;
+  height: 100%;
+  min-height: 650px;
+  max-height: 650px;
+}
+
+.tittle-logo {
+  white-space: pre;
+  font-family: monospace;
+  text-align: left;
+}
+
+.tittle-logo p {
+  margin: 0;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info-contact a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.fields {
+  display: flex;
+}
+
+.fields input {
+  padding: 0;
+  font-size: 100%;
+  margin: 15px;
+  outline: none;
+  border: 0 solid;
+  color: white;
+  width: auto;
+  flex-grow: 1;
+  caret-color: transparent;
+}
+
+.space-between {
+  margin-bottom: -10px;
+}
+
+.command-form {
+  color: white;
+}
+
+.button-form {
+  color: white;
+  border-color: white;
+  font-weight: 800;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-delete {
+  color: rgb(255, 255, 255);
+  border-color: rgb(194, 77, 77);
+  font-weight: 800;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-list-items select {
+  border-radius: 2px;
+  padding: 5px;
+  color: white !important;
+  font-weight: bold !important;
+  min-width: 200px
+}
+
+.command-bar {
+  display: inline-flex;
+  align-items: center;
+}
+
+.command-bar input {
+  margin: 10px;
+  outline: none;
+  border: 0 solid;
+  color: white;
+  width: auto;
+  flex-grow: 1;
+  caret-color: transparent;
+}
+
+.command-bar p {
+  margin-top: -4px;
+}
+
+.command-style--username {
+  color: #ff8037;
+}
+
+.command-style--group {
+  color: #18E3C8;
+}
+
+.command-style--rest {
+  color: #A89984;
+}
+
+.sign {
+  align-items: end;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.swal2-html-container,
+.swal2-title {
+  color: tomato !important;
+  background-color: white;
+  font-weight: bold;
+}
+
+.swal2-x-mark,
+.swal2-actions,
+.swal2-success-ring,
+.swal2-icon-content {
+  background-color: transparent !important;
+}
+
+article ul {
+  display: flex;
+  align-items: center;
+  /* Esto centrará verticalmente los elementos en el contenedor */
+}
+
+article button {
+  margin-left: 10px;
+  /* Esto agrega un espacio a la izquierda de los botones para separarlos del párrafo */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e252e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebdbb2;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8037;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,17 @@
+<script>
+    const req = {
+        method: 'GET'
+    }
+
+    fetch('http://localhost:9001/users', req)
+        .catch(error => console.error(error))
+        .then(res => {
+            if (res.ok) {
+                res.json()
+                    .catch(error => console.error(error))
+                    .then(body => console.log(res.status, body))
+            } else {
+                console.error(res.status)
+            }
+        })
+</script>

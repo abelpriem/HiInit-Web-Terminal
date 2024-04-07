@@ -1,0 +1,21 @@
+<script>
+    const req = {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer 65e8c8c89653e312c3490947`
+        }
+    }
+
+    fetch('http://localhost:9001/download', req)
+        .catch(error => console.error(error))
+        .then(res => {
+            if (res.ok) {
+                res.json()
+                    .catch(error => console.error(error))
+                    .then(body => console.log(res.status, body))
+            } else {
+                console.log(res.status)
+            }
+        })
+
+</script>

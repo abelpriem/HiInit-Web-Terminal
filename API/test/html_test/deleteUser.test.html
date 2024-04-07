@@ -1,0 +1,20 @@
+<script>
+    const req = {
+        method: 'DELETE',
+        headers: {
+            Authorization: 'Bearer 65e8c15ef35504a2bcecf912'
+        }
+    }
+
+    fetch('http://localhost:9001/delete/users/65e8e1a8f2e29243b05b5961', req)
+        .catch(error => console.error(error))
+        .then(res => {
+            if (res.ok) {
+                res.json()
+                    .catch(error => console.error(error))
+                    .then(body => console.log(res.status, body))
+            } else {
+                console.error(res.status)
+            }
+        })
+</script>

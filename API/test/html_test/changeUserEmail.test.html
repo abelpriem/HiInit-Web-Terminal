@@ -1,0 +1,21 @@
+<script>
+    const req = {
+        method: 'PATCH',
+        headers: {
+            Authorization: 'Bearer 65d4fb288fc1b2105843be40'
+        },
+        body: JSON.stringify({ newEmail: 'nosoy@batman.com', password: '123123123', againPassword: '123123123' })
+    }
+
+    fetch('http://localhost:9001/users/email', req)
+        .catch(error => console.error(error))
+        .then(res => {
+            if (res.ok) {
+                res.json()
+                    .catch(error => console.error(error))
+                    .then(body => console.error(res.status, body))
+            } else {
+                console.error(res.status)
+            }
+        })
+</script>
