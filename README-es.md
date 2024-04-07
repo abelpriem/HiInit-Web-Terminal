@@ -18,12 +18,12 @@ Languajes: | [English](./README.md) |
 
 ## ÍNDICE
 
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README-es.md#resumen">Resumen</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README-es.md#tipos-de-usuarios">Tipos de Usuarios</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README-es.md#casos---funciones">Casos - Funciones</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README-es.md#modelo-de-datos">Modelo de Datos</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README-es.md#comandos">Comandos</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README-es.md#figma---componentes">Figma - Componentes</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README-es.md#resumen">Resumen</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README-es.md#tipos-de-usuarios">Tipos de Usuarios</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README-es.md#casos---funciones">Casos - Funciones</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README-es.md#modelo-de-datos">Modelo de Datos</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README-es.md#comandos">Comandos</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README-es.md#figma---componentes">Figma - Componentes</a>
 
 
 ## RESUMEN
