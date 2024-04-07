@@ -18,12 +18,12 @@ Languajes: | [Spanish](./README-es.md) |
 
 ## INDEX
 
-- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/main/README.md#resume">Resume</a>
-- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/main/README.md#type-of-users">Types of User</a>
-- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/main/README.md#cases---functions">Cases - Functions</a>
-- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/main/README.md#data-model">Data Model</a>
-- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/main/README.md#commands">Commands</a>
-- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/main/README.md#figma---stories">Figma - Stories</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README.md#resume">Resume</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README.md#type-of-users">Types of User</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README.md#cases---functions">Cases - Functions</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README.md#data-model">Data Model</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README.md#commands">Commands</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/blob/main/README.md#figma---stories">Figma - Stories</a>
 
 ## RESUME
 
