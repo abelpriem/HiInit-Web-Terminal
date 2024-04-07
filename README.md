@@ -18,12 +18,12 @@ Languajes: | [Spanish](./README-es.md) |
 
 ## INDEX
 
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README.md#resume">Resume</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README.md#type-of-users">Types of User</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README.md#cases---functions">Cases - Functions</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README.md#data-model">Data Model</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README.md#commands">Commands</a>
-- <a href="https://github.com/AbelPucela94/isdi-parttime-202309/blob/feature/proyect/staff/abel-prieto/PROYECT/doc/README.md#figma---stories">Figma - Stories</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/edit/main/README.md#resume">Resume</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/edit/main/README.md#type-of-users">Types of User</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/edit/main/README.md#cases---functions">Cases - Functions</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/edit/main/README.md#data-model">Data Model</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/edit/main/README.md#commands">Commands</a>
+- <a href="https://github.com/abelpriem/HiInit-Web-Terminal/edit/main/README.md#figma---stories">Figma - Stories</a>
 
 ## RESUME
 
