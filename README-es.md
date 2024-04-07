@@ -1,4 +1,4 @@
-Languajes: | [English](./README-en.md) |
+Languajes: | [English](./README.md) |
 
 ## HiInit Terminal Web v0.1 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
