@@ -7,6 +7,7 @@ import changeUserPasswordHandler from './changeUserPasswordHandler.js'
 
 import retrieveFilesHandler from './retrieveFilesHandler.js'
 import uploadFileHandler from './uploadFileHandler.js'
+import uploadFileToS3Handler from './uploadFileToS3Handler.js'
 import downloadFileHandler from './downloadFileHandler.js'
 import deleteFileHandler from './deleteFileHandler.js'
 
@@ -28,6 +29,7 @@ export {
 
     retrieveFilesHandler,
     uploadFileHandler,
+    uploadFileToS3Handler,
     downloadFileHandler,
     deleteFileHandler,
 

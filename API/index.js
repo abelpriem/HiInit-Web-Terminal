@@ -11,6 +11,7 @@ import {
     changeUserEmailHandler,
     changeUserPasswordHandler,
     uploadFileHandler,
+    uploadFileToS3Handler,
     downloadFileHandler,
     deleteFileHandler,
     retrieveFilesHandler,
@@ -57,9 +58,11 @@ mongoose.connect(process.env.URL_MONGODB_HIINIT_API)
         // CHANGE USER PASSWORD
         server.patch('/users/password', jsonBodyParser, changeUserPasswordHandler)
 
-        // UPLOAD FILE
+        // UPLOAD FILE ON DISK
         server.post('/upload', upload.single('file'), uploadFileHandler)
-        // server.post('/upload', uploadFileBBHandler)
+
+        // UPLOAD FILE ON AWS
+        server.post('/upload', upload.single('file'), uploadFileToS3Handler)
 
         // RETRIEVE FILES
         server.get('/download', retrieveFilesHandler)
