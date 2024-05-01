@@ -14,7 +14,8 @@ Languajes: | [English](./README.md) |
 > Los archivos pueden ser compartidos entre los distintos miembros de un grupo específico, navegando entre los distintos archivos de la carpeta raíz.
 > Hay diferentes roles con sus correspondientes permisos pero solo el tipo de usuario **ADMIN** tiene el `sistema CRUD` (creación, escritura, carga y eliminación).
 
-- Última actualización: 26/03/2024
+- Última actualización: 01/05/2024
+- Deploy: <a href='https://main--hiinit-web-terminal.netlify.app/'>Hiinit Terminal Web</a>
 
 ## ÍNDICE
 
