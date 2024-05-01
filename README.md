@@ -1,6 +1,6 @@
 Languajes: | [Spanish](./README-es.md) |
 
-## HiInit Web Terminal v1.0 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+## HiInit Web Terminal v1.0 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)[![Netlify Status](https://api.netlify.com/api/v1/badges/b6605ef0-438b-4f66-825d-6f6a000e696f/deploy-status)](https://app.netlify.com/sites/hiinit-web-terminal/deploys)
 
       ___ ___  .___ .___  _______   .___ ___________     __      __        ___                ____    _______        
      /   |   \ |   ||   | \      \  |   |\__    ___/    /  \    /  \  ____ \_ |__      ___  _/_   |   \   _  \     
