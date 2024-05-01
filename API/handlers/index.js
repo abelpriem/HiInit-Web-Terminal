@@ -7,8 +7,11 @@ import changeUserPasswordHandler from './changeUserPasswordHandler.js'
 
 import retrieveFilesHandler from './retrieveFilesHandler.js'
 import uploadFileHandler from './uploadFileHandler.js'
+import uploadFileToS3Handler from './uploadFileToS3Handler.js'
 import downloadFileHandler from './downloadFileHandler.js'
+import downloadFileToS3Handler from './downloadFileToS3Handler.js'
 import deleteFileHandler from './deleteFileHandler.js'
+import deleteFileOnS3Handler from './deleteFileOnS3Handler.js'
 
 import retrieveAllUsersHandler from './retrieveAllUsersHandler.js'
 import deleteUsersHandler from './deleteUsersHandler.js'
@@ -28,8 +31,11 @@ export {
 
     retrieveFilesHandler,
     uploadFileHandler,
+    uploadFileToS3Handler,
     downloadFileHandler,
+    downloadFileToS3Handler,
     deleteFileHandler,
+    deleteFileOnS3Handler,
 
     retrieveAllUsersHandler,
     deleteUsersHandler,

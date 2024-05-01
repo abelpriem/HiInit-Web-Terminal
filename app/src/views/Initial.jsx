@@ -63,8 +63,8 @@ function Initial() {
                     <p>CONTACT</p>
                     <br></br>
                     <p>📧 abelpriem94@hotmail.com</p>
-                    <a href="https://github.com/AbelPucela94" target="_blank">🌐 github.com/AbelPucela94</a>
-                    <a href="https://www.linkedin.com/in/abel-prieto-mart%C3%ADn-050b75b8/" target="_blank">🌐 linkedin.com/abel-prieto-martin</a>
+                    <a href="https://github.com/abelpriem" target="_blank">🌐 GitHub - Abel Prieto</a>
+                    <a href="https://www.linkedin.com/in/abel-prieto-mart%C3%ADn-050b75b8/" target="_blank">🌐 Linkedin | Abel Prieto</a>
                     <p>-----------------------------------------</p>
                 </div>
             </div>

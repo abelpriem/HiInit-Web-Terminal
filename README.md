@@ -1,14 +1,15 @@
 Languajes: | [Spanish](./README-es.md) |
 
-## HiInit Web Terminal v0.1 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+## HiInit Web Terminal v1.0 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-      ___ ___  .___ .___  _______   .___ ___________     __      __        ___                    _______      _______        
-     /   |   \ |   ||   | \      \  |   |\__    ___/    /  \    /  \  ____ \_ |__           ___  _\   _  \     \   _  \     
-    /    ~    \|   ||   | /   |   \ |   |  |    |       \   \/\/   /_/ __ \ | __ \          \  \/ /  /_\  \    /  /_\  \    
-    \    Y    /|   ||   |/    |    \|   |  |    |        \        / \  ___/ | \_\ \          \   /\  \_/   \   \  \_/   \   
-     \___|_  / |___||___|\____|__  /|___|  |____|         \__/\  /   \___   |___  /           \_/  \_____  / /\ \_____  /   
-           \/                    \/                            \/        \/     \/                       \/  \/       \/    
+      ___ ___  .___ .___  _______   .___ ___________     __      __        ___                ____    _______        
+     /   |   \ |   ||   | \      \  |   |\__    ___/    /  \    /  \  ____ \_ |__      ___  _/_   |   \   _  \     
+    /    ~    \|   ||   | /   |   \ |   |  |    |       \   \/\/   /_/ __ \ | __ \     \  \/ /|   |   /  /_\  \     
+    \    Y    /|   ||   |/    |    \|   |  |    |        \        / \  ___/ | \_\ \     \   / |   |   \  \_/   \   
+     \___|_  / |___||___|\____|__  /|___|  |____|         \__/\  /   \___   |___  /      \_/  |___| /\ \_____  /   
+           \/                    \/                            \/        \/     \/                  \/       \/           
 <br>
+
 
 > HiInit is a `file and data upload web terminal` with the ability to register and log in users in different groups and categories.
 > Files can be shared between different members of a specific group as well as navigate between the different folders that make up the root.
@@ -38,8 +39,13 @@ Languajes: | [Spanish](./README-es.md) |
 <br>
 
 `For HiInit v1.0`
-- [ ] Using AWS for cloud or remote file hosting
-- [ ] Use MongoDB ATLAS to store BBD in the cloud
+- [x] Using `AWS` for cloud or remote file hosting `npm i aws-sdk`
+- [x] Use `MongoDB ATLAS` to store BBD on Cloud
+- [x] Deploy with `Render` and `Netlify``
+
+<br>
+
+`For HiInit v1.5`
 - [ ] Organization and creation of folders
 - [ ] Add staff groups/roles
 - [ ] Assign more groups to users

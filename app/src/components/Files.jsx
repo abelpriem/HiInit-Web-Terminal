@@ -56,12 +56,12 @@ function Files(props) {
 
         try {
             logic.downloadFile(file.id)
-                .then(blob => {
-                    const url = window.URL.createObjectURL(blob)
+                .then(url => {
+                    // const url = window.URL.createObjectURL(blob)
 
                     const anchor = document.createElement('a')
                     anchor.href = url
-                    anchor.download = file.name
+                    // anchor.download = url.substring(url.lastIndexOf('/') + 1)
                     anchor.click()
 
                     window.URL.revokeObjectURL(url)

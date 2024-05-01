@@ -24,7 +24,8 @@ export default async function retrieveFiles(userId) {
                 const filesArray = files.map(file => ({
                     id: file._id.toString(),
                     name: file.name,
-                    owner: file.owner.toString()
+                    owner: file.owner.toString(),
+                    url: file.url
                 }))
 
                 return filesArray
@@ -42,7 +43,8 @@ export default async function retrieveFiles(userId) {
                 const filesArray = sharedFiles.map(file => ({
                     id: file._id.toString(),
                     name: file.name,
-                    owner: file.owner.toString()
+                    owner: file.owner.toString(),
+                    url: file.url
                 }))
 
                 return filesArray
@@ -59,7 +61,8 @@ export default async function retrieveFiles(userId) {
 
             const filesArray = files.map(file => ({
                 id: file._id.toString(),
-                name: file.name
+                name: file.name,
+                url: file.url
             }))
 
             return filesArray

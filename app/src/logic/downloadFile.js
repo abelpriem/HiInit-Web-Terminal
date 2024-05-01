@@ -22,7 +22,9 @@ function downloadFile(fileId) {
                     .then(body => { throw new errors[body.error](body.message) })
             }
 
-            return res.blob()
+            return res.json()
+                .catch(error => { throw new SystemError(error.message) })
+                .then(url => { return url })
         })
 }
 

@@ -74,6 +74,9 @@ const file = new Schema({
     permissions: {
         type: Number,
         enum: [0, 2, 3]
+    },
+    url: {
+        type: String
     }
 })
 
