@@ -11,7 +11,7 @@ function retrieveFiles() {
         }
     }
 
-    return fetch('http://localhost:9001/download', req)
+    return fetch(`${import.meta.env.VITE_HIINIT_APP}/download`, req)
         .catch(error => { throw new SystemError(error.message) })
         .then(res => {
             if (!res.ok) {
