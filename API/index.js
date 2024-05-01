@@ -3,6 +3,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import multer from 'multer'
+import AWS from 'aws-sdk'
 import {
     authenticateUserHandler,
     registerUserHandler,
@@ -13,10 +14,12 @@ import {
     uploadFileHandler,
     uploadFileToS3Handler,
     downloadFileHandler,
+    downloadFileToS3Handler,
     deleteFileHandler,
     retrieveFilesHandler,
 
     deleteUsersHandler,
+    deleteFileOnS3Handler,
     retrieveAllUsersHandler,
     registerAdminHandler,
     createGroupHandler,
@@ -33,9 +36,18 @@ mongoose.connect(process.env.URL_MONGODB_HIINIT_API)
         const jsonBodyParser = express.json()
 
         // DISK STORAGE
-        const upload = multer({ dest: 'uploads/' })
+        // const upload = multer({ dest: 'uploads/' })
+
+        // S3 STORAGE
+        const upload = multer()
 
         server.use(cors())
+
+        // AWS CREDENTIALS
+        AWS.config.update({
+            accessKeyId: `${process.env.AWS_ACCESS_KEY_ID}`,
+            secretAccessKey: `${process.env.AWS_SECRET_ACCESS_KEY}`
+        })
 
         // ALL API REQUEST
         server.get('/hello', (req, res) => res.send('Hello HIINIT API v0.0'))
@@ -59,7 +71,7 @@ mongoose.connect(process.env.URL_MONGODB_HIINIT_API)
         server.patch('/users/password', jsonBodyParser, changeUserPasswordHandler)
 
         // UPLOAD FILE ON DISK
-        server.post('/upload', upload.single('file'), uploadFileHandler)
+        // server.post('/upload', upload.single('file'), uploadFileHandler)
 
         // UPLOAD FILE ON AWS
         server.post('/upload', upload.single('file'), uploadFileToS3Handler)
@@ -67,11 +79,17 @@ mongoose.connect(process.env.URL_MONGODB_HIINIT_API)
         // RETRIEVE FILES
         server.get('/download', retrieveFilesHandler)
 
-        // DOWNLOAD FILE
-        server.get('/download/:fileId', downloadFileHandler)
+        // DOWNLOAD FILE ON DISK
+        // server.get('/download/:fileId', downloadFileHandler)
 
-        // DELETE FILE
-        server.delete('/download/delete/:fileId', deleteFileHandler)
+        // DOWNLOAD FILE ON AWS
+        server.get('/download/:fileId', downloadFileToS3Handler)
+
+        // DELETE FILE ON DISK
+        // server.delete('/download/delete/:fileId', deleteFileHandler)
+
+        // DELETE FILE ON DISK
+        server.delete('/download/delete/:fileId', deleteFileOnS3Handler)
 
         // REGISTER ADMIN
         server.post('/admin', jsonBodyParser, registerAdminHandler)

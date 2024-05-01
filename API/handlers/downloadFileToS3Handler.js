@@ -1,19 +1,19 @@
 import jwt from 'jsonwebtoken'
-import uploadFileToS3 from '../logic/uploadFileToS3.js'
+import downloadFileToS3 from '../logic/downloadFileS3.js'
 import { errors } from 'com'
 
-const { NotFoundError, ContentError, TokenError } = errors
+const { NotFoundError, TokenError } = errors
 const { JsonWebTokenError } = jwt
 
 export default async (req, res) => {
     const token = req.headers.authorization.substring(7)
     const { sub: userId } = jwt.verify(token, process.env.JWT_SECRET)
 
-    const file = req.file
+    const { fileId } = req.params
 
     try {
-        const fileUrl = await uploadFileToS3(userId, file)
-        res.status(200).json({ success: true, URL: fileUrl })
+        const fileURL = await downloadFileToS3(userId, fileId)
+        res.json(fileURL)
 
     } catch (error) {
         let status = 500
@@ -27,11 +27,10 @@ export default async (req, res) => {
             status = 404
         }
 
-        if (error instanceof TypeError || error instanceof ContentError) {
+        if (error instanceof TypeError) {
             status = 409
         }
 
-        // console.log(error)
-        res.status(status).json({ success: false, message: error.message })
+        res.status(status).json({ success: false, error: error.constructor.name, message: error.message })
     }
 }

@@ -1,13 +1,13 @@
 Languajes: | [English](./README.md) |
 
-## HiInit Terminal Web v0.1 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+## HiInit Terminal Web v1.0 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-      ___ ___  .___ .___  _______   .___ ___________     __      __        ___                    _______      _______        
-     /   |   \ |   ||   | \      \  |   |\__    ___/    /  \    /  \  ____ \_ |__           ___  _\   _  \     \   _  \     
-    /    ~    \|   ||   | /   |   \ |   |  |    |       \   \/\/   /_/ __ \ | __ \          \  \/ /  /_\  \    /  /_\  \    
-    \    Y    /|   ||   |/    |    \|   |  |    |        \        / \  ___/ | \_\ \          \   /\  \_/   \   \  \_/   \   
-     \___|_  / |___||___|\____|__  /|___|  |____|         \__/\  /   \___   |___  /           \_/  \_____  / /\ \_____  /   
-           \/                    \/                            \/        \/     \/                       \/  \/       \/    
+      ___ ___  .___ .___  _______   .___ ___________     __      __        ___                ____    _______        
+     /   |   \ |   ||   | \      \  |   |\__    ___/    /  \    /  \  ____ \_ |__      ___  _/_   |   \   _  \     
+    /    ~    \|   ||   | /   |   \ |   |  |    |       \   \/\/   /_/ __ \ | __ \     \  \/ /|   |   /  /_\  \     
+    \    Y    /|   ||   |/    |    \|   |  |    |        \        / \  ___/ | \_\ \     \   / |   |   \  \_/   \   
+     \___|_  / |___||___|\____|__  /|___|  |____|         \__/\  /   \___   |___  /      \_/  |___| /\ \_____  /   
+           \/                    \/                            \/        \/     \/                  \/       \/    
 <br>
 
 > HiInit es un sistema de terminal web de `creación y carga de archivos` con un sistema de registro y login de usuarios con diferentes grupos y categorías.
@@ -39,8 +39,14 @@ Languajes: | [English](./README.md) |
 <br>
 
 `Para HiInit v1.0`
-- [ ] Utilización de AWS para el alojamiento en nube o remoto de archivos 
-- [ ] Uso de MongoDB Atlas para almacenar base de datos en Cloud
+- [x] Utilización de `AWS` para el alojamiento en nube o remoto de archivos `npm i aws-sdk`
+- [x] Uso de `MongoDB Atlas` para almacenar base de datos en Cloud
+- [x] Deploy con `Render` y `Netlify`
+
+<br>
+
+`Para HiInit v1.5`
+
 - [ ] Organización y creación de carpetas
 - [ ] Añadir grupos/roles de staffs
 - [ ] Poder asignar más grupos a usuarios

@@ -1,4 +1,3 @@
-import fs from 'fs'
 import jwt from 'jsonwebtoken'
 const { JsonWebTokenError } = jwt
 import uploadFile from '../logic/uploadFile.js'

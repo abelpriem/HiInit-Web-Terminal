@@ -1,5 +1,4 @@
 import AWS from 'aws-sdk'
-import fs from 'fs/promises'
 import dotenv from 'dotenv'
 import { User, File } from "../data/models.js"
 import { validate, errors } from "com"
@@ -10,7 +9,6 @@ dotenv.config()
 const region = `${process.env.AWS_REGION}`
 const accessKeyId = `${process.env.AWS_ACCESS_KEY_ID}`
 const secretAccessKey = `${process.env.AWS_SECRET_ACCESS_KEY}`
-const bucketName = `${process.env.AWS_BUCKET_NAME}`
 
 const s3 = new AWS.S3({
     region,
@@ -18,19 +16,8 @@ const s3 = new AWS.S3({
     secretAccessKey
 })
 
-async function saveFile(path, newPath) {
-    try {
-        return fs.rename(path, newPath)
-    } catch (error) {
-        throw new SystemError(`Failed to save file: ${error.message}`)
-    }
-}
-
-export default async function uploadFileBB(userId, file) {
+export default async function uploadFileToS3(userId, fileData) {
     validate.id(userId, 'ID user')
-
-    const { originalName, mimeType, path } = file
-    const oldPath = path
 
     try {
         const user = await User.findById(userId).lean()
@@ -38,26 +25,23 @@ export default async function uploadFileBB(userId, file) {
             throw new NotFoundError('User not found')
         }
 
-        const file = await File.create({
-            name: originalName,
-            owner: userId,
-            type: mimeType,
-            permissions: 3
-        })
-
         const params = {
-            Bucket: bucketName,
-            Key: file._id.toString(),
-            Body: await fs.readFile(path)
+            Bucket: `${process.env.AWS_BUCKET_NAME}`,
+            Key: `${userId}/${fileData.originalname}`,
+            Body: fileData.buffer
         }
 
-        // SAVE ON SW3
+        // SAVE SW3
         const data = await s3.upload(params).promise()
-        console.log('Archivo subido exitosamente:', data.Location)
 
-        // SAVE ON DISK
-        const newPath = `./uploads/${file._id.toString()}`
-        await saveFile(oldPath, newPath)
+        // SAVE DISK
+        await File.create({
+            name: fileData.originalname,
+            owner: userId,
+            type: fileData.mimetype,
+            permissions: 3,
+            url: data.Location
+        })
 
         return data.Location
 
