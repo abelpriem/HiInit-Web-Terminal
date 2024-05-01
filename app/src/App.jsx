@@ -8,7 +8,7 @@ import handleError from './utils/handleError.js'
 function App() {
 
   return <>
-    <Router basename='/hiinit'>
+    <Router>
       <Context.Provider value={{ handleError }}>
         <Routes>
           <Route path="/" element={<Initial />} />
